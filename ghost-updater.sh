@@ -9,8 +9,8 @@ echo "https://abshiro-azhar.github.io/ghost-blog/" > CNAME
 cd -
 ECTO1_SOURCE=http://localhost:2368 ECTO1_TARGET=https://abshiro-azhar.github.io/ghost-blog/ python3 ecto1.py
 cd docs
-mkdir content 
-docker cp dfc84b67c372:/var/lib/ghost/content/images/. content/images
+#mkdir content 
+docker cp dfc84b67c372:/var/lib/ghost/content .
 cd -
 grep -lR "srcset" docs/ | xargs sed -i 's/srcset/thisisbuggedatm/g'
 git add .
