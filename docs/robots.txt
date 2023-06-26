@@ -1,5 +1,5 @@
 User-agent: *
-Sitemap: https://MYDOMAIN.com/sitemap.xml
+Sitemap: https://abshiro-azhar.github.io/ghost-blog/sitemap.xml
 Disallow: /ghost/
 Disallow: /p/
 Disallow: /email/

@@ -4,9 +4,9 @@ git pull origin master
 rm -r docs
 mkdir docs
 cd docs
-echo "MYDOMAIN.com" > CNAME
+echo "https://abshiro-azhar.github.io/ghost-blog/" > CNAME
 cd -
-ECTO1_SOURCE=http://localhost:2368 ECTO1_TARGET=https://MYDOMAIN.com python3 ecto1.py
+ECTO1_SOURCE=http://localhost:2368 ECTO1_TARGET=https://abshiro-azhar.github.io/ghost-blog/ python3 ecto1.py
 cd docs
 mkdir content 
 docker cp dfc84b67c372:/var/lib/ghost/content/images/. content/images
