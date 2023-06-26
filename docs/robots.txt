@@ -1,5 +1,5 @@
 User-agent: *
-Sitemap: http://serverip:2368/sitemap.xml
+Sitemap: https://MYDOMAIN.com/sitemap.xml
 Disallow: /ghost/
 Disallow: /p/
 Disallow: /email/
