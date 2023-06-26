@@ -10,7 +10,7 @@ cd -
 ECTO1_SOURCE=http://localhost:2368 ECTO1_TARGET=https://abshiro-azhar.github.io/ghost-blog/ python3 ecto1.py
 cd docs
 mkdir content 
-docker cp dfc84b67c372:/var/lib/ghost/content/themes content/themes
+docker cp dfc84b67c372:/var/lib/ghost/current/content/themes content/themes
 cd -
 grep -lR "srcset" docs/ | xargs sed -i 's/srcset/thisisbuggedatm/g'
 git add .
