@@ -8,8 +8,9 @@ echo "MYDOMAIN.com" > CNAME
 cd -
 ECTO1_SOURCE=http://localhost:2368 ECTO1_TARGET=https://MYDOMAIN.com python3 ecto1.py
 cd docs
-docker cp  ghost:/var/lib/ghost/content .
-#docker cp ghost:/var/lib/ghost/content/images/. content/images
+mkdir content 
+mkdir content/images
+docker cp ghost:/var/lib/ghost/content/images/. content/images
 cd -
 grep -lR "srcset" docs/ | xargs sed -i 's/srcset/thisisbuggedatm/g'
 git add .
