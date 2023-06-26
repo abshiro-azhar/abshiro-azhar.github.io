@@ -4,6 +4,7 @@ git pull origin master
 rm -r docs
 mkdir docs
 cd docs
+touch .nojekyll
 echo "https://abshiro-azhar.github.io/ghost-blog/" > CNAME
 cd -
 ECTO1_SOURCE=http://localhost:2368 ECTO1_TARGET=https://abshiro-azhar.github.io/ghost-blog/ python3 ecto1.py
