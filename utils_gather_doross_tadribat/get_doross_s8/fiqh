@@ -1,0 +1,14 @@
+#!/bin/bash 
+
+output=fiqh.pdf 
+list="" 
+
+for m in 614 {619..620} {623..626} 643 {674..676}    
+do 
+	google-chrome  --headless --disable-gpu --print-to-pdf=d$m.pdf "https://azharegypt.org/emis/cms/reposid/lcms4/cntp03prn.php?lid=$m&cid=107"
+list+=" d$m.pdf"
+#echo $list 
+done
+
+pdfunite $list $output 
+xdg-open $output 
