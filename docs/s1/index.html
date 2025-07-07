@@ -160,10 +160,24 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
-    font-family: 'Noto Kufi Arabic', sans-serif;
-      font-size: 16px;
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  font-size: 16px;
+}
 
-    }
+/* Add dark mode support for tables */
+@media (prefers-color-scheme: dark) {
+  table {
+    background-color: #23272f;
+    color: #fff;
+  }
+  table th {
+    background-color: #2d323c;
+    color: #fff;
+  }
+  table td {
+    border-bottom: 1px solid #444;
+  }
+}
 
 table th, table td {
   padding: 12px 15px;
